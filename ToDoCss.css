@@ -1,0 +1,118 @@
+body {
+	margin: 0;
+	background: linear-gradient(to right, #f6f1d3, #648880, #293f50);
+}
+header {
+	background-color: #081948;
+	color: #fff;
+	width: 100%;
+	text-align: center;
+    padding: 25px 0 25px 0;
+	font: 18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+	width: 390px;
+	margin: 0 auto;
+}
+.list {
+	background-color: rgb(114, 115, 115);
+	float: left;
+}
+.tick, .tick-new {
+	width: 48px;
+    vertical-align: top;
+	margin-top: 1px;
+	height: 50px;
+}
+.tick {
+	background-color: rgb(204, 204, 204);
+	transition: background-color 0.5s ease-out;
+}
+.tick-new {
+	background-color: rgb(204, 204, 204);
+}
+.new-note, .old-note {
+	background-color: #F5F5F5;
+    height: 50px;
+	width: 296px;
+    vertical-align: top;    
+    margin-top: 1px;
+    margin-left: 1px;
+}
+.tick, .old-note {
+	display: inline-block;
+	padding: 1px;
+}
+.tick-new, .new-note {
+	display: inline-block;
+	padding: 1px;
+}
+.unchecked-btn {
+    margin: 8px 8px 0 8px;
+}
+.old-task:hover {
+	cursor: pointer;
+}
+.inpt {
+	background-color: rgba(166, 163, 171, 0.2);
+	margin: 8px 0 0 15px;
+    height: 28px;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    border-right: 1px solid rgba(0, 0, 0, 0.19);
+    border-top: 2px solid rgba(0, 0, 0, 0.19);
+    border-bottom: 2px solid #fff;
+    text-indent: 10px;
+    font-style: italic;
+    font-size: 14px;
+    width: 268px;
+}
+.action-btn {
+	float: left;
+	width: 40px;
+	background-color: rgb(0, 0, 0);
+}
+.add {
+	height: 24px;
+	width: 24px;
+    margin: 15px 0 0 8px;
+}
+.add:hover, .delete:hover {
+	cursor: pointer;
+}
+.delete {
+	height: 34px;
+    width: 34px;
+    margin: 10px 0 0 3px;
+}
+.tasks {
+	line-height: 50px;
+    text-indent: 17px;
+}
+.checked-btn {
+	margin: 8px 8px 0 8px;
+}
+.container:after {
+	content: "";
+    display: table;
+    clear: both;
+}
+.clicked {
+	background-color : rgba(236, 236, 37, 0.58);
+}
+.completed {
+	text-decoration: line-through;
+}
+.check {
+	background-color: rgb(18, 146, 52);
+}
+.uncheck {
+	background-color: rgb(204, 204, 204);
+}
+.old-note:hover {
+	background-color: rgba(129, 154, 125, 0.84);
+	transition: background-color 1s ease-out;
+}
+.tasks {
+	overflow: hidden;
+}
